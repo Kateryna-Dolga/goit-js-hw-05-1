@@ -230,9 +230,8 @@ gender: "female"
                     <h2>Рішення:</h2>
                     <p>
                     <pre>
-const sortByDescendingFriendCount = (users) => {
-return users.sort((a, b) => b.friends.length - a.friends.length);
-};
+const sortByDescendingFriendCount = users =>
+users.toSorted((a, b) => b.friends.length - a.friends.length);
 
 console.log(
 sortByDescendingFriendCount([
