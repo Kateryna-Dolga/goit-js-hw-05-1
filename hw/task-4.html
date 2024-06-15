@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title><JS-GO-IT-HW-5></title>
+</head>
+
+<body>
+
+    <!------------------------logo------------------------------------------------------------------>
+    <div class="logo">
+        <h1> <a href="../index.html" class="logo-a">GOIT JavaScript - 107 </a></h1>
+    </div><!------------------------/logo----------------------------------------------------------------->
+
+    <!------------------------main-content----------------------------------------------------------------->
+    <div class="main-content">
+
+        <!------------------------menu---------------------------------------------------------------->
+        <div class="menu">
+
+            <nav class="menu">
+                <ul class="menu-ul">
+                    <li class="menu-li"><a href="" class="menu-a">Homework-1</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-2</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-4</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-3</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-4</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="./hw-4/task-1.html" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="./hw-4/task-2.html" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="./hw-4/task-3.html" class="small-menu-a">task-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a orange">Homework-5</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="task-1.html" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="task-2.html" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="task-3.html" class="small-menu-a">task-3</a></li>
+                            <li class="small-menu-li"><a href="task-4.html" class="small-menu-a">task-4</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-6</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-7</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-8</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-9</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-10</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-11</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-12</a></li>
+                </ul>
+            </nav>
+        </div><!------------------------/menu---------------------------------------------------------------->
+        <!------------------------foto-content--------------------------------------------------------------->
+        <div class="foto-content">
+            <!------------------------foto------------------------------------------------------------------->
+            <div class="foto">
+                <img class="cat-it" width="260" src="../img/js.jpg" alt="it-cat">
+            </div><!------------------------foto----------------------------------------------------------------->
+            <!------------------------content----------------------------------------------------------------->
+            <div class="content">
+                <!------------------------exersice----------------------------------------------------------------->
+                <div class="exersice block">
+                    <h2>Задача 4. Загальний баланс</h2>
+                    <p>
+                    <pre>
+Напиши стрілочну функцію getTotalBalanceByGender(users, gender), 
+яка прийматиме два параметра:
+
+перший параметр users — масив об’єктів користувачів,
+другий параметр gender — рядок, що зберігає стать.
+Функція має використовувати ланцюжок виклику методів та повертати загальний 
+баланс користувачів (властивість balance), стать яких (властивість gender) 
+збігається зі значенням параметра gender.
+
+Візьми код нижче і встав після оголошення своєї функції для перевірки коректності 
+її роботи. 
+У консоль будуть виведені результати її роботи.
+</pre>
+                    </p>
+                </div>
+                <!------------------------/exersice----------------------------------------------------------------->
+                <!------------------------addcode----------------------------------------------------------------->
+                <div class = "foto-move">
+                <div class="putcode block">
+                    <h2>Додатковий код до задачі:</h2>
+                    <p>
+                    <pre>
+const clients = [
+{
+name: "Moore Hensley",
+gender: "male",
+balance: 2811
+},
+{
+name: "Sharlene Bush",
+gender: "female",
+balance: 3821
+},
+{
+name: "Ross Vazquez",
+gender: "male",
+balance: 3793
+},
+{
+name: "Elma Head",
+gender: "female",
+balance: 2278
+},
+{
+name: "Carey Barr",
+gender: "male",
+balance: 3951
+},
+{
+name: "Blackburn Dotson",
+gender: "male",
+balance: 1498
+},
+{
+name: "Sheree Anthony",
+gender: "female",
+balance: 2764
+}
+];
+</pre>
+                    </p>
+                </div>
+                <!------------------------/addcode----------------------------------------------------------------->
+                <div class="foto-two">
+                    <img class="cat-it-two" width="260" src="../img/js-kat.jpg" alt="it-cat">
+                </div>
+                </div>
+                <!------------------------putcode----------------------------------------------------------------->
+                <div class="putcode block">
+                    <h2>Залиш цей код для перевірки ментором:</h2>
+                    <p>
+                <pre>
+console.log(getTotalBalanceByGender(clients, "male")); // 12053
+            
+console.log(getTotalBalanceByGender(clients, "female")); // 8863
+                </pre>
+                    </p>
+                </div>
+                <!------------------------/putcode----------------------------------------------------------------->
+                <!------------------------chackout----------------------------------------------------------------->
+                <div class="chackout block">
+                    <h2>На що буде звертати увагу ментор при перевірці:</h2>
+                    <p>
+                   
+                        <ul>
+                            <li>Оголошена змінна getTotalBalanceByGender</li>
+                            <li>Змінній getTotalBalanceByGender присвоєна стрілочна функція з параметрами (users, gender)</li>
+                            <li>У тілі функції використовується ланцюжок методів у правильному порядку</li>
+                            <li>Значення параметра users не змінюється</li>
+                            <li>Якщо значення параметра gender — це рядок "male", функція повертає число 12053</li>
+                            <li>Якщо значення параметра gender — це рядок "female", функція повертає число 8863</li>
+                            <li>Виклик функції з випадковими, але валідними аргументами повертає правильне значення</li>
+                        </ul>
+                        
+                        
+                      
+                       
+                       
+                        
+             
+                    </p>
+                </div>
+                <!------------------------/chackout----------------------------------------------------------------->
+                <!------------------------Solution----------------------------------------------------------------->
+                <div class="solution block">
+                    <h2>Рішення:</h2>
+                    <p>
+                    <pre>
+const getTotalBalanceByGender = (users, gender) => {
+return users
+.filter(user => user.gender === gender)
+.reduce((totalBalance, user) => totalBalance + user.balance, 0);
+};
+
+const clients = [
+{
+name: "Moore Hensley",
+gender: "male",
+balance: 2811
+},
+{
+name: "Sharlene Bush",
+gender: "female",
+balance: 3821
+},
+{
+name: "Ross Vazquez",
+gender: "male",
+balance: 3793
+},
+{
+name: "Elma Head",
+gender: "female",
+balance: 2278
+},
+{
+name: "Carey Barr",
+gender: "male",
+balance: 3951
+},
+{
+name: "Blackburn Dotson",
+gender: "male",
+balance: 1498
+},
+{
+name: "Sheree Anthony",
+gender: "female",
+balance: 2764
+}
+];
+
+console.log(getTotalBalanceByGender(clients, "male")); // 12053
+console.log(getTotalBalanceByGender(clients, "female")); // 8863
+</pre>
+                    </p>
+                </div>
+                <!------------------------/solution----------------------------------------------------------------->
+                <!------------------------result----------------------------------------------------------------->
+                <div class="result block">
+                    <h2>Результат:</h2>
+                    <p>
+                    <pre>
+12053
+8863
+</pre>
+                    </p>
+                </div>
+                <!------------------------/result----------------------------------------------------------------->
+
+            </div><!------------------------/content----------------------------------------------------------------->
+        </div><!------------------------/foto-content---------------------------------------------------------------->
+    </div><!------------------------/main-content----------------------------------------------------------------->
+    <!------------------------footer----------------------------------------------------------------->
+    <div class="footer">
+        <ul class="footer-menu-ul">
+            <li class="footer-menu-li">
+                <a class="footer-menu-a footer-line">
+                    Homework-1
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-2
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-3
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-4
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a  orange-footer">
+                    Homework-5
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-6
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-7
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-8
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-9
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-10
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-11
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-12
+                </a>
+            </li>
+        </ul>
+        <!------------------------footer-info----------------------------------------------------------------->
+        <div class="footer-info">
+            <p>Kateryna Dolga</p>
+            <p>GOIT JavaScript - 107</p>
+            <p>email: july_info@ukr.net</p>
+            <p>tel: 067-176-1313</p>
+            <div>
+                <!------------------------/footer-info----------------------------------------------------------------->
+            </div><!------------------------/footer----------------------------------------------------------------->
+
+
+
+            <script src="../js-hw-5/task-4.js"></script>
+</body>
+
+</html>

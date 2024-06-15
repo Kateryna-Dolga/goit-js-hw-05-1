@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title><JS-GO-IT-HW-5></title>
+</head>
+
+<body>
+
+    <!------------------------logo----------------------------------------------------------------->
+    <div class="logo">
+        <h1> <a href="../index.html" class="logo-a">GOIT JavaScript - 107 </a></h1>
+    </div><!------------------------/logo------------------------------------------------------------------>
+
+    <!------------------------main-content----------------------------------------------------------------->
+    <div class="main-content">
+
+        <!------------------------menu---------------------------------------------------------------->
+        <div class="menu">
+
+            <nav class="menu">
+                <ul class="menu-ul">
+                    <li class="menu-li"><a href="" class="menu-a">Homework-1</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-2</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-4</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-3</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-4</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="./hw-4/task-1.html" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="./hw-4/task-2.html" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="./hw-4/task-3.html" class="small-menu-a">task-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a orange">Homework-5</a>
+                        <ul class="small-menu-ul">
+                            <li class="small-menu-li"><a href="task-1.html" class="small-menu-a">task-1</a></li>
+                            <li class="small-menu-li"><a href="task-2.html" class="small-menu-a">task-2</a></li>
+                            <li class="small-menu-li"><a href="task-3.html" class="small-menu-a">task-3</a></li>
+                            <li class="small-menu-li"><a href="task-4.html" class="small-menu-a">task-4</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-6</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-7</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-8</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-9</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-10</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-11</a></li>
+                    <li class="menu-li"><a href="" class="menu-a">Homework-12</a></li>
+                </ul>
+            </nav>
+        </div><!------------------------/menu---------------------------------------------------------------->
+        <!------------------------foto-content--------------------------------------------------------------->
+        <div class="foto-content">
+            <!------------------------foto------------------------------------------------------------------->
+            <div class="foto">
+                <img class="cat-it" width="260" src="../img/js.jpg" alt="it-cat">
+            </div><!------------------------foto----------------------------------------------------------------->
+            <!------------------------content----------------------------------------------------------------->
+            <div class="content">
+                <!------------------------exersice----------------------------------------------------------------->
+                <div class="exersice block">
+                    <h2>Задача 2. Користувачі з другом</h2>
+                    <p>
+                    <pre>
+Виконуй це завдання у файлі task-2.js
+
+
+Напиши стрілочну функцію getUsersWithFriend(users, friendName) , яка прийматиме 
+два параметра:
+
+перший параметр users — масив об’єктів користувачів
+другий параметр friendName — ім’я друга для пошуку.
+Функція має повертати масив усіх користувачів із масиву users, у яких є друг з іменем 
+friendName. 
+Друзі кожного користувача зберігаються у властивості friends. Якщо користувачів, 
+у яких є такий других немає, то функція має повернути порожній масив.
+
+Поради:
+
+Метод filter() можна використовувати для створення нового масиву з елементами, 
+які задовольняють певну умову.
+Використовуй метод includes() для перевірки, чи масив friends містить friendName.
+Візьми код нижче і встав після оголошення своєї функції для перевірки коректності 
+її роботи. 
+У консоль будуть виведені результати її роботи.
+</pre>
+                    </p>
+                </div>
+                <!------------------------/exersice----------------------------------------------------------------->
+                <!------------------------addcode----------------------------------------------------------------->
+                <div class="foto-move">
+                    <div class="putcode block">
+                        <h2>Додатковий код до задачі:</h2>
+                        <p>
+                        <pre>
+const allUsers = [
+{
+name: "Moore Hensley",
+friends: ["Sharron Pace"]
+},
+{
+name: "Sharlene Bush",
+friends: ["Briana Decker", "Sharron Pace"]
+},
+{
+name: "Ross Vazquez",
+friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"]
+},
+{
+name: "Elma Head",
+friends: ["Goldie Gentry", "Aisha Tran"]
+},
+{
+name: "Carey Barr",
+friends: ["Jordan Sampson", "Eddie Strong"]
+},
+{
+name: "Blackburn Dotson",
+friends: ["Jacklyn Lucas", "Linda Chapman"]
+},
+{
+name: "Sheree Anthony",
+friends: ["Goldie Gentry", "Briana Decker"]
+}
+];
+</pre>
+                        </p>
+                    </div>
+                    <!------------------------/addcode----------------------------------------------------------------->
+                    <div class="foto-two">
+                        <img class="cat-it-two" width="260" src="../img/js-kat.jpg" alt="it-cat">
+                    </div>
+                </div>
+                <!------------------------putcode----------------------------------------------------------------->
+                <div class="putcode block">
+                    <h2>Залиш цей код для перевірки ментором:</h2>
+                    <p>
+                    <pre>
+console.log(getUsersWithFriend(allUsers, "Briana Decker"));
+// [
+// {
+// name: "Sharlene Bush",
+// friends: ["Briana Decker", "Sharron Pace"]
+// },
+// {
+// name: "Sheree Anthony",
+// friends: ["Goldie Gentry", "Briana Decker"]
+// }
+// ]
+
+console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
+// [
+// {
+// name: "Elma Head",
+// friends: ["Goldie Gentry", "Aisha Tran"]
+// },
+// {
+// name: "Sheree Anthony",
+// friends: ["Goldie Gentry", "Briana Decker"]
+// }
+// ]
+
+console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
+                </pre>
+                    </p>
+                </div>
+                <!------------------------/putcode----------------------------------------------------------------->
+                <!------------------------chackout----------------------------------------------------------------->
+                <div class="chackout block">
+                    <h2>На що буде звертати увагу ментор при перевірці:</h2>
+                    <p>
+
+                    
+                        <li>Оголошена змінна getUsersWithFriend</li>
+                        <li>Змінній getUsersWithFriend присвоєна стрілочна функція з параметрами (users, friendName)</li>
+                        <li>Для перебирання параметра users використовується метод filter()</li>
+                        <li>Якщо значення параметра friendName — це рядок "Briana Decker", функція повертає масив об'єктів користувачів з іменами
+                        Sharlene Bush і Sheree Anthony</li>
+                        <li>Якщо значення параметра friendName — це рядок "Goldie Gentry", функція повертає масив об'єктів користувачів з іменами
+                        Elma Head і Sheree Anthony</li>
+<li>Якщо значення параметра friendName — це рядок "Adrian Cross", функція повертає порожній масив</li>
+<li>Виклик функції з випадковими, але валідними аргументами повертає правильне значення</li>
+                    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </p>
+                </div>
+                <!------------------------/chackout----------------------------------------------------------------->
+                <!------------------------Solution----------------------------------------------------------------->
+                <div class="solution block">
+                    <h2>Рішення:</h2>
+                    <p>
+                    <pre>
+const getUsersWithFriend = (users, friendName) => {
+return users.filter(user => user.friends.includes(friendName));
+};
+
+const allUsers = [
+{
+name: "Moore Hensley",
+friends: ["Sharron Pace"]
+},
+{
+name: "Sharlene Bush",
+friends: ["Briana Decker", "Sharron Pace"]
+},
+{
+name: "Ross Vazquez",
+friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"]
+},
+{
+name: "Elma Head",
+friends: ["Goldie Gentry", "Aisha Tran"]
+},
+{
+name: "Carey Barr",
+friends: ["Jordan Sampson", "Eddie Strong"]
+},
+{
+name: "Blackburn Dotson",
+friends: ["Jacklyn Lucas", "Linda Chapman"]
+},
+{
+name: "Sheree Anthony",
+friends: ["Goldie Gentry", "Briana Decker"]
+}
+];
+
+console.log(getUsersWithFriend(allUsers, "Briana Decker"));
+// [
+// {
+// name: "Sharlene Bush",
+// friends: ["Briana Decker", "Sharron Pace"]
+// },
+// {
+// name: "Sheree Anthony",
+// friends: ["Goldie Gentry", "Briana Decker"]
+// }
+// ]
+
+console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
+// [
+// {
+// name: "Elma Head",
+// friends: ["Goldie Gentry", "Aisha Tran"]
+// },
+// {
+// name: "Sheree Anthony",
+// friends: ["Goldie Gentry", "Briana Decker"]
+// }
+// ]
+
+console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
+
+</pre>
+                    </p>
+                </div>
+                <!------------------------/solution----------------------------------------------------------------->
+                <!------------------------result----------------------------------------------------------------->
+                <div class="result block">
+                    <h2>Результат:</h2>
+                    <p>
+                    <pre>
+Array(2)
+0: {name: 'Sharlene Bush', friends: Array(2)}
+1: {name: 'Sheree Anthony', friends: Array(2)}length: 2[[Prototype]]: Array(0)
+
+Array(2)
+0: {name: 'Elma Head', friends: Array(2)}
+1: {name: 'Sheree Anthony', friends: Array(2)}
+length: 2
+[[Prototype]]: Array(0)
+
+Array(0)length: 0[[Prototype]]: Array(0)
+</pre>
+                    </p>
+                </div>
+                <!------------------------/result----------------------------------------------------------------->
+
+            </div><!------------------------/content----------------------------------------------------------------->
+        </div><!------------------------/foto-content---------------------------------------------------------------->
+    </div><!------------------------/main-content----------------------------------------------------------------->
+    <!------------------------footer----------------------------------------------------------------->
+    <div class="footer">
+        <ul class="footer-menu-ul">
+            <li class="footer-menu-li">
+                <a class="footer-menu-a footer-line">
+                    Homework-1
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-2
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-3
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-4
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a  orange-footer">
+                    Homework-5
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-6
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-7
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-8
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-9
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-10
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-11
+                </a>
+            </li>
+            <li class="footer-menu-li">
+                <a class="footer-menu-a">
+                    Homework-12
+                </a>
+            </li>
+        </ul>
+        <!------------------------footer-info----------------------------------------------------------------->
+        <div class="footer-info">
+            <p>Kateryna Dolga</p>
+            <p>GOIT JavaScript - 107</p>
+            <p>email: july_info@ukr.net</p>
+            <p>tel: 067-176-1313</p>
+            <div>
+                <!------------------------/footer-info----------------------------------------------------------------->
+            </div><!------------------------/footer----------------------------------------------------------------->
+
+
+
+
+            <script src="../js-hw-5/task-2.js"></script>
+
+</body>
+
+</html>
